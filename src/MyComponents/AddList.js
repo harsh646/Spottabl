@@ -22,7 +22,7 @@ export default function AddList({addList}) {
          
         </div>
         <div>
-        <button type="submit" className="btnn">ADD</button>
+        <button type="submit" className="btnn">ADD CSM</button>
         </div>
         </div>
      </form>

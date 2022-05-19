@@ -36,17 +36,20 @@ function App() {
     {
       sno:1,
       name:"Chilman Mehrotra",
-      des:"Client Manager"
+      des:"Client Manager",
+      email:"cil@gmail.com"
     },
     {
       sno:2,
       name:"Saboor Sirwal",
-      des:"Recruitment Success"
+      des:"Recruitment Success",
+      email:"saboor@gmail.com"
     },
     {
       sno:3,
       name:"Smriti Wadhwa",
-      des:""
+      des:"",
+      email:"smriti@gmail.com"
     }
   ])
   const [searchTerm, setSearchTerm]=useState("")
