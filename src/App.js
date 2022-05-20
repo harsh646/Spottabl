@@ -12,26 +12,6 @@ function App() {
       return e!==list;
     }))
   }
-  const addList=(name)=>{
-    
-    let sno
-    if(lists.length===0)
-    {
-      sno=0
-
-    }
-    else
-    {
-      sno=lists[lists.length-1].sno+1;
-
-    }
-    const mylist={
-      sno:sno,
-      name:name,
-    }
-    setLists([...lists,mylist]);
-
-  }
   const [lists, setLists]=useState([
     {
       sno:1,
@@ -52,6 +32,30 @@ function App() {
       email:"smriti@gmail.com"
     }
   ])
+  const addList=(name)=>{
+    
+    let sno
+    
+    if(lists.length===0)
+    {
+      sno=0
+
+    }
+    else
+    {
+      sno=lists[lists.length-1].sno+1;
+
+    }
+    const mylist={
+      sno:sno,
+      name:name,
+    }
+
+    setLists([...lists,mylist]);
+    console.log(lists);
+
+  }
+ 
   const [searchTerm, setSearchTerm]=useState("")
   const [searchResults, setSearchResults]=useState([])
   const searchHandler=(searchTerm)=>{

@@ -18,7 +18,7 @@ export default function ListItem({ list, onDelete }) {
   {
     j=1;
   }
-  console.log(j);
+ 
   const[mySt,setMySt]=useState({
     display:"none"
   })

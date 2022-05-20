@@ -4,7 +4,14 @@ export default function AddList({addList}) {
     const[name, setName]=useState("");
     const submit=(e)=>{
         e.preventDefault();
-        addList(name);
+        let text=name;
+        const myArray=text.split(",");
+        console.log(myArray.length);
+        for(let i=0;i<myArray.length;i++)
+        {
+        console.log(myArray[i]);
+        addList(myArray[i]);
+        }
         setName(" ");
 
         
